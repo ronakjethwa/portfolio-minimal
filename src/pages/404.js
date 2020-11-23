@@ -32,8 +32,8 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" meta={[{ name: 'robots', content: 'noindex'}]} />
     <StyledSection>
       <StyledContentWrapper>
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <h1>404 - NOT FOUND</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness. Go back Home!</p>
       </StyledContentWrapper>
     </StyledSection>
   </Layout>
