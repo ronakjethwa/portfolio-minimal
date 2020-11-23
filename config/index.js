@@ -6,7 +6,7 @@ module.exports = {
     siteDescription: "I carry the blend of front end and design knowledge to deliver the intuitive and pixel perfect designed products",
     siteUrl: "https://ronakjethwa.com/",
     siteLanguage: "en_US",
-    siteIcon: "content/favicon.png", // Relative to gatsby-config file
+    siteIcon: "content/favicon-32x32.png", // Relative to gatsby-config file
     seoTitleSuffix: "Ronak Jethwa", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
     splashScreen: false, // Set this to true if you want to use the splash screen
