@@ -20,11 +20,11 @@ module.exports = {
     // Medium, GitHub, LinkedIn, XING, Behance
     socialMedia: [
         {
-            name: "Github",
+            name: "GitHub",
             url: "https://github.com/ronakjethwa"
         },        
         {
-            name: "Linkedin",
+            name: "LinkedIn",
             url: "https://www.linkedin.com/in/ronakjethwa/"
         },
         {
