@@ -26,9 +26,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
     flex-direction: column;
     justify-content: center;
     margin-bottom: 6rem;
-    @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-      margin-bottom: 4rem;
-    }
     .greetings {
       display: flex;
       justify-content: flex-start;
@@ -45,7 +42,13 @@ const StyledContentWrapper = styled(ContentWrapper)`
       font-size: 1.5rem;
       overflow: hidden;
       white-space: nowrap;
-      animation: typing 6s steps(100, end);
+      animation: typing 3s steps(100, end);
+    }
+    @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+      margin-bottom: 4rem;
+      .subtitle {
+        animation: typing 6s steps(100, end);
+      }
     }
 
     /* The typing effect */
