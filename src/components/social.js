@@ -10,7 +10,7 @@ const { socialMedia } = config
 const StyledSocialWrapper = styled.div`
   display: grid;
   /* Calculate columns, depending on how many profiles there are */
-  grid-template-columns: repeat(${({ itemCount }) => itemCount + 1}, auto);
+  grid-template-columns: repeat(${({ itemCount }) => itemCount}, auto);
   justify-content: start;
   justify-items: start;
 
@@ -19,14 +19,13 @@ const StyledSocialWrapper = styled.div`
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    overflow: visible;
+    overflow: hidden;
   }
 
   /* Workaround: https://stackoverflow.com/questions/38993170/last-margin-padding-collapsing-in-flexbox-grid-layout */
@@ -80,18 +79,13 @@ const StyledSocialProfile = styled.a`
   background-position: right bottom;
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 0.125rem solid ${({ theme }) => theme.colors.primary};
-  padding: ${({ padding }) => (padding ? padding : ".3rem 1.25rem")};
-  transition: all 0.1s ease-out;
+  padding: ${({ padding }) => (padding ? padding : ".4rem 1.25rem")};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "1rem")};
   font-weight: 500;
   color: ${({ theme }) => theme.colors.primary};
   &:hover {
-    background-position: left bottom;
-    color: #ffffff;
-  }
-  &:hover svg {
-    /* Change svg color to white */
-    filter: brightness(0) invert(1);
+    background: #000000;
+    color: #fafafa;
   }
   svg {
     height: 1rem;

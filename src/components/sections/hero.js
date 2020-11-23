@@ -1,7 +1,6 @@
 import React, { useEffect, useContext } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion, useAnimation } from "framer-motion"
 
@@ -35,25 +34,30 @@ const StyledContentWrapper = styled(ContentWrapper)`
       justify-content: flex-start;
       align-items: center;
     }
-    .emoji {
-      margin-left: 0.75rem;
-      width: 2.2rem;
-      height: 2.2rem;
-      @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        margin-left: 1rem;
-        width: 3rem;
-        height: 3rem;
-      }
-    }
     .title {
+      font-size: 2rem;
       margin-bottom: 1.5rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
         margin-bottom: 0;
       }
     }
     .subtitle {
-      margin-top: -0.75rem;
+      font-size: 1.5rem;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 6s steps(100, end);
     }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
     .description {
       font-size: 1.125rem;
       margin-bottom: 2rem;
@@ -99,19 +103,14 @@ const Hero = ({ content }) => {
     }
     pageLoadSequence()
   }, [isIntroDone, eControls, gControls, sControls, uControls])
-  
+
   return (
     <StyledSection id="hero">
       {!isIntroDone && <SplashScreen />}
       <StyledContentWrapper>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={gControls}>
           <h1 className="title">
-            <div className="greetings">
-              {frontmatter.greetings}
-              <motion.div animate={eControls} style={{ originX: 0.7, originY: 0.7 }}>
-                <Img className="emoji" fluid={frontmatter.icon.childImageSharp.fluid} />
-              </motion.div>
-            </div>
+            <div className="greetings">{frontmatter.greetings}</div>
             {frontmatter.title}
           </h1>
           <h2 className="subtitle">

@@ -1,10 +1,10 @@
 module.exports = {
   colors: {
     primary: "#000000",
-    secondary: "#FFF4D9",
-    tertiary: "#F2F2F2",
+    secondary: "#fff4d9",
+    tertiary: "#f2f2f2",
     text: "#000000",
-    background: "#ffffff",
+    background: "#fafafa",
   },
   breakpoints: {
     xs: "480px",
@@ -13,9 +13,9 @@ module.exports = {
     lg: "1200px",
   },
   fonts: {
-    primary: "Roboto, Arial, sans-serif",
+    primary: "Helvetica, Arial, sans-serif",
   },
-  borderRadius: "1rem",
+  borderRadius: "0.5rem",
   pageWidth: "62.5rem",
   headerHeight: "6.25rem",
   footerHeight: "7.5rem",

@@ -1,13 +1,13 @@
 module.exports = {
 
-    author: "@konstantinmuenster",
-    siteTitle: "Gatsby Starter Portfolio Minimal",
-    siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
-    siteDescription: "A modern one-page portfolio with a clean yet expressive design.",
-    siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    author: "@ronakjethwa",
+    siteTitle: "Ronak",
+    siteShortTitle: "Ronak Jethwa", // Used as logo text in header, footer, and splash screen
+    siteDescription: "I carry the blend of front end and design knowledge to deliver the intuitive and pixel perfect designed products",
+    siteUrl: "https://ronakjethwa.com/",
     siteLanguage: "en_US",
     siteIcon: "content/favicon.png", // Relative to gatsby-config file
-    seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+    seoTitleSuffix: "Ronak Jethwa", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
     splashScreen: false, // Set this to true if you want to use the splash screen
 
@@ -20,52 +20,32 @@ module.exports = {
     // Medium, GitHub, LinkedIn, XING, Behance
     socialMedia: [
         {
-            name: "Linkedin",
-            url: "https://www.linkedin.com/in/konstantin-muenster/"
-        },
-        {
-            name: "Medium",
-            url: "https://konstantinmuenster.medium.com/"
-        },
-        {
             name: "Github",
-            url: "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal"
+            url: "https://github.com/ronakjethwa"
+        },        
+        {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/ronakjethwa/"
         },
         {
-            name: "Behance",
-            url: "https://www.behance.net/konstanmnster"
+            name: "Twitter",
+            url: "https://twitter.com/ronak_jethwa/"
+        },
+        {
+            name: "Instagram",
+            url: "https://www.instagram.com/ronakjethwa"
         },
     ],
   
     navLinks: {
         menu: [
-            {
-                name: "Articles",
-                url: "/#articles",
-            },
-            {
-                name: "About Me",
-                url: "/#about",
-            },
-            {
-                name: "Features",
-                url: "/#projects",
-            },
-        ],
-        button: {
-            name: "Contact",
-            url: "/#contact",
-        }
+        ]
     },
 
     footerLinks: [
         {
-            name: "Privacy",
-            url: "/privacy"
+            name: "ronakjethwa@gmail.com",
+            url: "/"
         },
-        {
-            name: "Imprint",
-            url: "/imprint"
-        }
     ]
 }

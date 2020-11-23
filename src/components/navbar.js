@@ -51,13 +51,13 @@ const StyledNav = styled.nav`
     margin: 0;
     &:hover {
       background: ${({ theme }) => theme.colors.primary};
-      color: #ffffff;
+      color: #fafafa;
     }
   }
 `
 
 const Navbar = () => {
-  const { menu, button } = navLinks
+  const { menu } = navLinks
   return (
     <StyledNav>
       {menu.map(({ name, url }, key) => {
@@ -67,7 +67,6 @@ const Navbar = () => {
           </Link>
         )
       })}
-      <Link className="cta-btn" to={button.url}>{button.name}</Link>
     </StyledNav>
   )
 }
