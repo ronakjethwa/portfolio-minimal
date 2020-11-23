@@ -1,18 +1,8 @@
-# Gatsby Starter Portfolio Minimal
-#### A modern one-page portfolio with a clean yet expressive design.
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/16b36180-0897-40c5-925c-fefa0232555c/deploy-status)](https://app.netlify.com/sites/gatsby-starter-portfolio-minimal/deploys)
-
-Portfolio Minimal is a Gatsby Starter. Starters are boilerplate projects that can be used to set up new sites effortless. With this starter, you can create a modern one-page portfolio within minutes. 
+# Portfolio Minimal
 
 Just install the starter, add your content, and there you go!
 
 <a href="#sections">Sections</a> · <a href="#features">Features</a> · <a href="#how-to-start">How to Start</a> · <a href="#edit-content">Edit Content</a> · <a href="#edit-theme">Edit Theme</a> · <a href="#edit-page-structure">Edit Page Structure</a> · <a href="#feedback">Feedback</a>
-
-<a href="https://gatsby-starter-portfolio-minimal.netlify.app/" target="_blank"><strong>🧐 LIVE DEMO</strong></a>
-
----
-
-<img src="screenshot.png" alt="Gatsby Starter Portfolio Minimal Screenshot" width="600" />
 
 ---
 
@@ -61,20 +51,14 @@ With Portfolio Minimal, you get up and running in just a few minutes.
 
    ```
 
-2. **Create a new Gatsby site with the Portfolio Minimal starter.**
-
-   ```
-   gatsby new portfolio-minimal https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal
-   ```
-
-3. **Start the site in `develop` mode.**
+2. **Start the site in `develop` mode.**
 
    ```
    cd portfolio-minimal
    gatsby develop
    ```
 
-4. **Open the source code and start editing!**
+3. **Open the source code and start editing!**
 
 ---
 
@@ -136,21 +120,3 @@ Each section (besides the Articles section) exists of an imported React componen
 If you want to add your own custom sections, there is a section template you can use. You can find it in the following directory: `src/components/templates`
 
 ---
-
-## Feedback
-
-Designing and building a portfolio from scratch can be tough. To inspire you and provide you a foundation to build upon, I've decided to publish [my personal website](https://konstantin.digital) as a Gatsby Starter. This boilerplate project should motivate you to build your own awesome portfolio with Gatsby.
-
-I always appreciate feedback, so share your thoughts and suggestions with me: [mail@konstantin.digital](mailto:mail@konstantin.digital)
-
-If you find any bugs or have feature suggestions, create a new issue or pull request 🙏
-
-Thanks a lot for using this starter! 💪
-
----
-
-## License
-
-Distributed under the [MIT](http://showalicense.com/?fullname=Konstantin+M%C3%BCnster&year=2019#license-mit) license. 
-
-See ``LICENSE`` for more information.
