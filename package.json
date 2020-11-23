@@ -2,7 +2,7 @@
   "name": "ronakjethwa-portfolio",
   "description": "A clean, one-page portfolio using MDX",
   "version": "1.0.0",
-  "author": "Ronak Jethwa",
+  "author": "@RonakJethwa",
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
@@ -60,9 +60,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal"
+    "url": "https://github.com/ronakjethwa/portfolio-minimal"
   },
   "bugs": {
-    "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal/issues"
+    "url": "https://github.com/ronakjethwa/portfolio-minimal"
   }
 }
