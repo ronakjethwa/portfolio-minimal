@@ -20,17 +20,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .footer-links {
-      /* Adjust width of links wrapper accordingly */
-      width: 10rem;
-      display: flex;
-      justify-content: space-between;
-      @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-        width: 15rem;
-      }
-    }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 `
 
@@ -49,7 +41,9 @@ const Footer = () => (
       </Link>
       <div className="footer-links">
         {footerLinks.map(({ name, url }, key) => (
-          <StyledLink key={key} to={url}>{name}</StyledLink>
+          <StyledLink key={key} to={url}>
+            {name}
+          </StyledLink>
         ))}
       </div>
     </StyledContentWrapper>
