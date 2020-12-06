@@ -33,8 +33,8 @@ module.exports = {
       url: "https://twitter.com/ronak_jethwa/",
     },
     {
-      name: "Instagram",
-      url: "https://www.instagram.com/ronakjethwa",
+      name: "Dev",
+      url: "https://dev.to/ronakjethwa",
     },
   ],
 
